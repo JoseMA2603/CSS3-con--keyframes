@@ -44,6 +44,17 @@ window.onload = function() {
     actualizarRotacion();
 }
 
+function cambiarTema() {
+    document.body.classList.toggle('modo-claro');
+    const botonTema = document.getElementById('botonTema');
+    if (document.body.classList.contains('modo-claro')) {
+        botonTema.textContent = 'Modo oscuro';
+    } else {
+        botonTema.textContent = 'Modo claro';
+    }
+}
+
+
 
 
 

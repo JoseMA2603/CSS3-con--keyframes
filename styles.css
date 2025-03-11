@@ -92,4 +92,35 @@ button:active {
     color: #444;
 }
 
+body.modo-claro {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2, #e0eafc);
+}
+
+.modo-claro .cuadrado {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.modo-claro .historial {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modo-claro .historial h2,
+.modo-claro #listaVelocidades li {
+    color: #333;
+}
+
+.modo-claro button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.modo-claro button:hover {
+    background-color: #e0e0e0;
+}
+
+.modo-claro button:active {
+    background-color: #d0d0d0;
+}
+
+
 
