@@ -1,12 +1,12 @@
 body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #222;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
     overflow: hidden;
     margin: 0;
+    position: relative;
 }
 
 .cuadrado {
@@ -14,23 +14,36 @@ body {
     height: 50px;
     background-color: red;
     position: absolute;
-    animation: mover 3s infinite ease-in-out;
+    top: 0;
+    left: 0;
+    animation: zigzag 5s infinite linear;
 }
 
-@keyframes mover {
-    0% { transform: translateX(0) translateY(0) scale(1); background-color: red; }
-    25% { transform: translateX(120px) translateY(70px) scale(1.5); background-color: blue; }
-    50% { transform: translateX(240px) translateY(0) scale(1); background-color: green; }
-    75% { transform: translateX(120px) translateY(-70px) scale(0.6); background-color: yellow; }
-    100% { transform: translateX(0) translateY(0) scale(1); background-color: red; }
+@keyframes zigzag {
+    0% { top: 0; left: 0; background-color: red; }
+    25% { top: 30vh; left: 50vw; background-color: blue; }
+    50% { top: 60vh; left: 0; background-color: green; }
+    75% { top: 90vh; left: 50vw; background-color: yellow; }
+    100% { top: 0; left: 100vw; background-color: red; }
+}
+
+.botones {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 button {
-    margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     background-color: white;
     border: none;
     border-radius: 5px;
+    margin: 5px 0;
+    width: 150px;
 }
