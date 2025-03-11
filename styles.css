@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -14,26 +15,20 @@ body {
     position: absolute;
     animation: mover 3s infinite ease-in-out;
 }
-
 @keyframes mover {
-    0% {
-        transform: translateX(0) translateY(0) scale(1);
-        background-color: red;
-    }
-    25% {
-        transform: translateX(120px) translateY(70px) scale(1.5);
-        background-color: blue;
-    }
-    50% {
-        transform: translateX(240px) translateY(0) scale(1);
-        background-color: green;
-    }
-    75% {
-        transform: translateX(120px) translateY(-70px) scale(0.6);
-        background-color: yellow;
-    }
-    100% {
-        transform: translateX(0) translateY(0) scale(1);
-        background-color: red;
-    }
+    0% { transform: translateX(0) translateY(0) scale(1); background-color: red; }
+    25% { transform: translateX(120px) translateY(70px) scale(1.5); background-color: blue; }
+    50% { transform: translateX(240px) translateY(0) scale(1); background-color: green; }
+    75% { transform: translateX(120px) translateY(-70px) scale(0.6); background-color: yellow; }
+    100% { transform: translateX(0) translateY(0) scale(1); background-color: red; }
+}
+button {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
 }
