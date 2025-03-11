@@ -122,5 +122,47 @@ body.modo-claro {
     background-color: #d0d0d0;
 }
 
+.boton-tema {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.boton-tema button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.boton-tema button:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.boton-tema button:active {
+    background-color: #bbb;
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.modo-claro .boton-tema button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.modo-claro .boton-tema button:hover {
+    background-color: #e0e0e0;
+}
+
+.modo-claro .boton-tema button:active {
+    background-color: #d0d0d0;
+}
+
 
 
