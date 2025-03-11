@@ -1,5 +1,6 @@
 let velocidad = 5; // Velocidad inicial en segundos
 let contadorCambios = 0;
+let rotacion = 0;
 
 function aumentarVelocidad() {
     velocidad = Math.max(1, velocidad - 1); // Reduce el tiempo de animación hasta un mínimo de 1s
@@ -30,10 +31,19 @@ function registrarCambio(tipo) {
     }
 }
 
-// Inicializar el historial con la velocidad inicial
+function actualizarRotacion() {
+    rotacion += 2; // Incrementa la rotación en 2 grados
+    if (rotacion >= 360) rotacion = 0; // Reinicia la rotación al completar una vuelta
+    document.getElementById('cuadrado').style.transform = `rotate(${rotacion}deg)`;
+    requestAnimationFrame(actualizarRotacion);
+}
+
+// Inicializar el historial con la velocidad inicial y comenzar la rotación
 window.onload = function() {
     registrarCambio('inicial');
+    actualizarRotacion();
 }
+
 
 
 
