@@ -64,3 +64,31 @@ button:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.historial {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 250px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.historial h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#listaVelocidades {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaVelocidades li {
+    margin-bottom: 5px;
+    color: #444;
+}
+
+
