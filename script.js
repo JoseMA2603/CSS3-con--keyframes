@@ -14,3 +14,4 @@ function actualizarAnimacion() {
     document.getElementById('cuadrado').style.animation = `zigzag ${velocidad}s infinite linear`;
 }
 
+

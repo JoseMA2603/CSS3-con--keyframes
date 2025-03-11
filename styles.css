@@ -20,11 +20,11 @@ body {
 }
 
 @keyframes zigzag {
-    0% { top: 0; left: 0; background-color: red; }
-    25% { top: 30vh; left: 50vw; background-color: blue; }
-    50% { top: 60vh; left: 0; background-color: green; }
-    75% { top: 90vh; left: 50vw; background-color: yellow; }
-    100% { top: 0; left: 100vw; background-color: red; }
+    0% { top: 0; left: 0; width: 50px; height: 50px; background-color: red; }
+    25% { top: 30vh; left: 50vw; width: 80px; height: 80px; background-color: blue; }
+    50% { top: 60vh; left: 0; width: 60px; height: 60px; background-color: green; }
+    75% { top: 90vh; left: 50vw; width: 40px; height: 40px; background-color: yellow; }
+    100% { top: 0; left: 100vw; width: 50px; height: 50px; background-color: red; }
 }
 
 .botones {
