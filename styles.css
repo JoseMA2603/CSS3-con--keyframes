@@ -17,14 +17,16 @@ body {
     top: 0;
     left: 0;
     animation: zigzag 5s infinite linear;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 @keyframes zigzag {
     0% { top: 0; left: 0; width: 50px; height: 50px; background-color: red; }
-    25% { top: 30vh; left: 50vw; width: 80px; height: 80px; background-color: blue; }
-    50% { top: 60vh; left: 0; width: 60px; height: 60px; background-color: green; }
-    75% { top: 90vh; left: 50vw; width: 40px; height: 40px; background-color: yellow; }
-    100% { top: 0; left: 100vw; width: 50px; height: 50px; background-color: red; }
+    25% { top: 30vh; left: 50vw; width: 80px; height: 80px; background-color: blue; box-shadow: 0 0 15px rgba(0, 0, 255, 0.8); }
+    50% { top: 60vh; left: 0; width: 60px; height: 60px; background-color: green; box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); }
+    75% { top: 90vh; left: 50vw; width: 40px; height: 40px; background-color: yellow; box-shadow: 0 0 15px rgba(255, 255, 0, 0.8); }
+    100% { top: 0; left: 100vw; width: 50px; height: 50px; background-color: red; box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); }
 }
 
 .botones {
@@ -46,4 +48,19 @@ button {
     border-radius: 5px;
     margin: 5px 0;
     width: 150px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+button:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    background-color: #bbb;
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
